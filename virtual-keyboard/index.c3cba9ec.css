@@ -1,0 +1,106 @@
+.input {
+  display: inline-block;
+  width: 160px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  line-height: 20px;
+  min-height: 20px;
+  border-radius: 4px;
+}
+.input.focus::after {
+  content: '|';
+  font-size: 15px;
+  margin-left: 1px;
+  animation: dance 1s linear infinite;
+}
+
+@keyframes dance {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: 1
+  }
+  51% {
+    opacity: 0
+  }
+  99% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+.keyboard{
+  background: #000;
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.keyboard.show{
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.keyboard .page{
+  color: #fff;
+  padding: 10px;
+  display: none;
+}
+
+.keyboard .page.page-lowercase{
+  display: block;
+}
+
+.row {
+  display: flex;
+}
+
+.keyboard .row > span {
+  height: 40px;
+  background: #454545;
+  margin: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -2px 0 2px 0 #888;
+  cursor: pointer;
+}
+
+.keyboard .row >span.active {
+  background: #eee;
+  color: #333;
+}
+
+.col-1 {
+  width: 5%;
+}
+
+.col-2 {
+  width: 10%;
+}
+
+.col-3 {
+  width: 15%;
+}
+
+.col-4 {
+  width: 20%;
+}
+
+.col-12 {
+  width: 60%;
+}
+
+.offset-1 {
+  margin-left: 5%;
+}
+/*# sourceMappingURL=index.c3cba9ec.css.map */
