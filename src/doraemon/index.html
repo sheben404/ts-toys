@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Doraemon</title>
+  </head>
+  <body>
+    <style id="demo2"></style>
+    <div id="demo"></div>
+    <div id="buttons">
+      <button id="btnPause">暂停</button>
+      <button id="btnPlay">播放</button>
+      <button id="btnSlow">慢速</button>
+      <button id="btnNormal">中速</button>
+      <button id="btnFast">快速</button>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      #buttons {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      #buttons > button {
+        margin-bottom: 10px;
+        padding: 4px 8px;
+      }
+      #demo2 {
+        display: none;
+      }
+      #demo {
+        position: fixed;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: 1px solid red;
+        overflow-y: auto;
+      }
+      #demo::-webkit-scrollbar {
+        display: none;
+      }
+      #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+      }
+    </style>
+    <div id="html">
+      <div class="doraemon">
+        <div class="face">
+          <div class="head"></div>
+          <div class="eyes">
+            <div class="eye eyeLeft"></div>
+            <div class="blackEye blackLeft"></div>
+            <div class="eye eyeRight"></div>
+            <div class="blackEye blackRight"></div>
+          </div>
+          <div class="base">
+            <div class="baseWhite"></div>
+            <div class="nose">
+              <div class="noseLight"></div>
+            </div>
+            <div class="noseLine"></div>
+            <div class="mouth"></div>
+
+            <div class="whiskers whi_right_top rotate160"></div>
+            <div class="whiskers whi_right"></div>
+            <div class="whiskers whi_right_bottom rotate20"></div>
+
+            <div class="whiskers whi_left_top rotate20"></div>
+            <div class="whiskers whi_left"></div>
+            <div class="whiskers whi_left_bottom rotate160"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

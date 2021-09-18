@@ -1,0 +1,8 @@
+{
+  "name": "ts-toys",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
+}
